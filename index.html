@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pooja B M | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- VIDEO BACKGROUND -->
+<div class="video-bg">
+  <video autoplay muted loop playsinline>
+    <source src="./videos/3d-bg.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay"></div>
+</div>
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">Pooja B M</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#internship">Internship</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#connect">Connect</a></li>
+  </ul>
+  <button id="themeToggle">🌙</button>
+</header>
+<div class="floating-shapes">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div data-aos="fade-right">
+    <img src="images/profile.jpg" class="profile-pic">
+    <h1>Hi, I’m <span>Pooja</span></h1>
+
+<p class="intro-text">
+  Computer Science Engineering student with a strong interest in Full Stack Development and Core Java. I enjoy building clean, user-friendly webapplications and working on real-world projects involving AI and modern web technologies.
+</p>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+<h2 data-aos="fade-up">Education</h2>
+
+<div class="card">
+  <h3>B.E – Computer Science & Engineering</h3>
+  <p>Bangalore Technological Institute (2022–2026)</p>
+  <p>CGPA: 8.19</p>
+</div>
+
+<div class="card">
+  <h3>PUC</h3>
+  <p>Maganuru Basappa PU College – 79.33%</p>
+</div>
+
+<div class="card">
+  <h3>SSLC</h3>
+  <p>Akshara Vidya Niketana School – 89.12%</p>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="gallery" id="projects">
+<h2 data-aos="fade-up">Projects</h2>
+
+<div class="gallery-grid">
+  <div class="gallery-card"
+    onclick="openModal(
+    'AI-Powered Smart Agro Support',
+    'AI-based Smart Irrigation System using ML & Deep Learning. Crop recommendation, disease detection, fertilizer recommendation, and price prediction with IoT integration.'
+  )">
+    <img src="images/agro.jpg">
+    <h3>AI-Powered Smart Agro</h3>
+  </div>
+
+  <div class="gallery-card"
+    onclick="openModal(
+    'Command Drive Warrior',
+    'Voice-controlled robotic car using Arduino UNO, ultrasonic sensors and Bluetooth with obstacle avoidance.'
+  )">
+    <img src="images/robot.jpg">
+    <h3>Command Drive Warrior</h3>
+  </div>
+</div>
+</section>
+
+<!-- INTERNSHIP -->
+<section class="section" id="internship">
+<h2 data-aos="fade-up">Internship</h2>
+
+<div class="card">
+  <h3>Full Stack Intern – KodNest</h3>
+  <p>Aug 2025 – Present | Bangalore</p>
+  <ul>
+    <li>Currently learning Full Stack development</li>
+    <li>Working with SQL, MySQL, Oracle</li>
+  </ul>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+<h2 data-aos="fade-up">Technical Skills</h2>
+<p>Java • Python • JavaScript </p>
+<p>• SQL • HTML • CSS </p>
+<p>React • MySQL • Oracle </p>
+</section>
+
+<!-- 🎧 FAVORITE MUSIC -->
+<section class="section" id="music">
+  <h2 data-aos="fade-up">My Favorite Tracks 🎧</h2>
+
+  <div class="playlist-container">
+
+    <div class="playlist-card teal">
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1RsGVp9tKS6Psz7gMwsXTP?utm_source=generator"
+        width="100%"
+        height="220"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="playlist-card pink">
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/7MsH6gZMOgzohJYDLGHHVw?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="playlist-card blue">
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/2arwVa2tCNQfLAGwFMe4bo?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+
+</div>
+</section>
+
+<!-- HOBBIES -->
+<section class="gallery" id="hobbies">
+<h2 data-aos="fade-up">Hobbies</h2>
+
+<div class="gallery-grid">
+  <img src="images/music.jpg" onclick="openLightbox(this)">
+  <img src="images/game.jpg" onclick="openLightbox(this)">
+  <img src="images/reading.jpg" onclick="openLightbox(this)">
+</div>
+</section>
+
+<!-- CONNECT -->
+<section class="section" id="connect">
+<h2 data-aos="fade-up">Let’s Connect</h2>
+<br>
+<div class="social-icons">
+  <a href="mailto:poojabmbm251@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  <a href="https://www.linkedin.com/in/pooja-b-m-42aa2428a"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://github.com/Poojabm1"><i class="fa-brands fa-github"></i></a>
+  <a href="https://www.instagram.com/pooja_huliyal_?igsh=MWt4OXNjdHlkazZudQ=="><i class="fa-brands fa-instagram"></i></a>
+</div>
+
+<a class="resume-btn" href="resume.pdf" download>Download Resume</a>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<button id="topBtn">↑</button>
+</body>
+</html>
