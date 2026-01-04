@@ -63,3 +63,28 @@ window.addEventListener("scroll", () => {
 btn.onclick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+/* =========================
+   Background Video (Mobile Fix)
+   ========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("bgVideo");
+
+  if (video) {
+    video.muted = true;
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+
+    const playVideo = () => {
+      video.play().catch(() => {
+        console.log("Autoplay blocked, retrying...");
+      });
+    };
+
+    playVideo();
+
+    // Retry on first user interaction (mobile requirement)
+    document.addEventListener("touchstart", playVideo, { once: true });
+    document.addEventListener("click", playVideo, { once: true });
+  }
+});
