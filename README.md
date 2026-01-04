@@ -4,7 +4,7 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript.
 It showcases my education, projects, skills, hobbies, and favorite music in a clean and responsive design.
 
 ## Live Website
-https://YOUR-USERNAME.github.io/pooja-portfolio/
+https://poojabm1.github.io/My-portfolio-website/
 
 ## Features
 - Responsive layout (mobile & desktop)
@@ -34,3 +34,4 @@ The website is hosted using GitHub Pages and is publicly accessible.
 ## About Me
 I am a Computer Science Engineering student interested in Full Stack Development and modern web technologies.
 GitHub Pages enabled
+
